@@ -48,3 +48,25 @@ class Magician extends Player
 
 }
 ```
+
+We have decided that when the magician call the method **atk()** he gains 20 of life, what we can do is to call the method **atk()** from the Player class 
+
+```php
+
+public function atk(Player $player)
+{
+    parent::atk($player);
+
+    $this->strength += 10;
+}
+
+```
+
+## Public, protected, private
+
+So now let us pay attention to the keyword **public** before each attribute and each function. 
+- **Public** means that all the attributes and the methods are available anywhere in your code
+- **Protected** mean that the attribute or the method are available in the current class but also in the inherited class
+- **Private** mean that the attribute or the method are available only in the current class (not instanciable)
+
+So, in our case, we can change all the public key by a protected key.
