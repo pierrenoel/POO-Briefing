@@ -21,7 +21,7 @@ $john = new User('John','Doe','john@doe.com','1234');
 Now we see that we have one line left, it is much better than before but it is not magic at all, we need to modify a little our class.
 We need to a constructor.
 
-```markdown
+```
 Constructor in PHP is special type of function of a class which is automatically executed as any object of that class is created or instantiated. Constructor is also called magic function because in PHP, magic method is start usually with two underscore characters.
 ```
 
