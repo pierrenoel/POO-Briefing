@@ -1,4 +1,4 @@
-## Objects?
+# Objects?
 
 Let us have a look about object. An object in the current life can be a table, a car but even a human or an animal. The good thing is that's exactly the same ting in POO. 
 
@@ -28,3 +28,50 @@ We need to create a class.
 
 ```A class can define types of operations, or methods, that can be performed on a object```
 
+In some other words, a class is the place where you are going to initiate all the attributes and the methods of your object. Let see how to write a class.
+
+```php
+class User{
+    
+    public $firstName;
+    public $lastName;
+    public $email;
+    public $password;
+
+    public function writeArticle()
+    {
+        return 'The user wrote an article';
+    }
+
+    public function comment()
+    {
+        return 'The user wrote a comment';
+    }
+}
+```
+
+```markdown
+- Use the keyword **class** 
+- The name of you class must contain the first letter in uppercase
+- Do not pay attention for the moment to the **public** keyword
+```
+
+## How to instantiate an object from an existing class? 
+
+```php
+$john = new User();
+$john->firstName = "John";
+
+var_dump($john)
+
+```
+
+If we see the result of our var_dump function, we see that we assign the firstName to our object John.
+
+```php
+object(User)#1 (1) {
+  ["firstName"]=>
+  string(6) "John"
+}
+
+```
