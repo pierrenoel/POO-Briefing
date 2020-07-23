@@ -81,5 +81,5 @@ We can also call a method from our class
 ```php
 echo $john->comment(); //returns The user wrote a comment
 ```
-
+[Previous](../README.md)
 [Next](../02.contruct/readme.md)

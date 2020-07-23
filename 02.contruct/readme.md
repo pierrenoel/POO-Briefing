@@ -42,3 +42,4 @@ public function __construct($firstName,$lastName,$email,$password){
 ```
 
 [Previous](../01.Introduction/readme.md)
+[Next](../03.methods/readme.md)
