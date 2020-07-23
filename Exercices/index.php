@@ -17,4 +17,6 @@ $john->firstName = 'Pierre';
 
 var_dump($john);
 
+echo $john->comment();
+
 ?>

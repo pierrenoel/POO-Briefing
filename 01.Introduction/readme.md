@@ -62,7 +62,7 @@ class User{
 $john = new User();
 $john->firstName = "John";
 
-var_dump($john)
+var_dump($john);
 
 ```
 
@@ -74,4 +74,10 @@ object(User)#1 (1) {
   string(6) "John"
 }
 
+```
+
+We can also call a method from our class
+
+```php
+echo $john->comment(); //returns The user wrote a comment
 ```
