@@ -14,9 +14,18 @@ In those chapters, we are going to see some very important points, here are them
 - [Methods](03.methods/readme.md)
 - [Heritage](04.heritage/readme.md)
 - [Static](05.static/readme.md)
+- [Interface](06.interface/readme.md)
+
+### More
+- Facade
+- Singleton
+- Observer
 
 ### Exercices
+
+- Form
 
 ### Ressources
 - [PHP.net](https://www.php.net/manual/en/language.oop5.php)
 - [Pierre Giraud](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
+- [Grafikart](https://www.grafikart.fr/tutoriels/presentation-1091)
