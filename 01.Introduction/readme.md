@@ -1,44 +1,30 @@
 ## Objects?
 
-Let us have a look about object. An object in the current life can be a table, a car but even a human or a animal. The good thing is that's exactly the same ting in POO. 
+Let us have a look about object. An object in the current life can be a table, a car but even a human or an animal. The good thing is that's exactly the same ting in POO. 
 
 Here is an example:
 
-If we take car, we can describe it like below: 
-- Color,
-- wheels
-- Engine
-- and so on
+If we take an user, we can describe it like below: 
 
-We call that the attributes of an object (refer to variables). But as we know, objects interact with each other by some action, we call them methods (refer to functions)
+- first name
+- last name
+- email
+- password 
+- ...
 
-Now let us see to our first example:
+We call that **the attributes** of an object (refer to the variables). But as we know, objects interact with each other by some action, we call them methods (refer to then functions)
 
-```php
-class Car
-{
-    $color = "red";
-    $wheels = 4;
-    $engine = true;
+If we take our user back, we can assign some actions:
 
-    function start()
-    {
-        return 'The car starts';
-    }
+- write an article
+- comment 
+- update the gallery
+- ...
 
-    function stop()
-    {
-        return 'The car stops';
-    }
-}
-```
+But we know the existence of an object but most of them are very different, we know that two people does not have the same email or password.
+How can we differentiate them? 
 
-A class represents the object with some attributes and some methods, it describe how an object is and how what are its functionalities. 
-An object is representative of the class, in other words, the instance of the class. 
+We need to create a class.
 
-So, let us instance our class Car
-
-```php
-$car =  new Car();
-```
+```A class can define types of operations, or methods, that can be performed on a object```
 
