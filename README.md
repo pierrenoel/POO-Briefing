@@ -9,3 +9,5 @@ In those chapters, we are going to see some very important points, here are them
 
 - [Introduction](01.Introduction/readme.md)
 - [Construct](02.contruct/readme.md)
+- [Methods](03.methods/readme.md)
+- [Heritage](04.heritage/readme.md)
