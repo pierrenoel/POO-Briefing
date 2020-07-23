@@ -8,5 +8,4 @@ In other words, POO means **oriented programming object** It means we are going 
 In those chapters, we are going to see some very important points, here are them.
 
 - [Introduction](01.Introduction/readme.md)
-- [Class]
-- [Interaction]
+- [construct](02.contruct/readme.md)
