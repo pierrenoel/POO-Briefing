@@ -1,13 +1,13 @@
 # Methods 
 
-So, you need to show a attribute of the object or you need to edit on of them, we saw in the previous lesson that we can call the attribute with an arrow.
+So, you need to show the result of an attribute or you need to edit one of them, we saw in the previous lesson that we can call the attribute with an arrow.
 
 ```php
 $john->firstName = "Henry";
 echo $john->firstName; // Return Henry
 ```
 
-But it is not the correct way because it is dangerous to let the user update the attribute, we need to allow that in using accessors (Getters and Setters). So for all the attribute, you need to create a getter (eg: get the first name) and a setter (eg: set a new first name to the object). 
+But it is not the correct way because we don't want to let the user update the attribute, we need to allow that in using accessors (Getters and Setters). So for all the attributes, you need to create a getter (eg: get the first name) and a setter (eg: set a new first name to the object). 
 
 
 ```php

@@ -1,6 +1,6 @@
 # Heritage
 
-Okay, for this example, let us create a player class and add a method **atk** The method attack is particular. When a player attacks another one, he obtains 10 points of strength but the other loses life.
+For this example, let us create a player class and add a method **atk**. When a player attacks another one, he obtains 10 points of strength but the other loses point of life.
 
 ```php
 class Player
@@ -49,7 +49,7 @@ class Magician extends Player
 }
 ```
 
-We have decided that when the magician call the method **atk()** he gains 20 of life, what we can do is to call the method **atk()** from the Player class 
+We have decided that when the magician calls the method **atk()** he gains 20 of life, what we can do is to call the method **atk()** from the Player class. 
 
 ```php
 
@@ -64,9 +64,9 @@ public function atk(Player $player)
 
 ## Public, protected, private
 
-So now let us pay attention to the keyword **public** before each attribute and each function. 
-- **Public** means that all the attributes and the methods are available anywhere in your code
-- **Protected** mean that the attribute or the method are available in the current class but also in the inherited class
-- **Private** mean that the attribute or the method are available only in the current class (not instanciable)
+So now let us pay attention to the keyword **public** before each attribute and each function: 
+- **Public** means that all the attributes and all the methods are available anywhere in your code
+- **Protected** means that all the attribute or all the method are available in the current class but also in the inherited class
+- **Private** means that all the attributes or all the methods are available only in the current class (not instantiable)
 
 So, in our case, we can change all the public key by a protected key.

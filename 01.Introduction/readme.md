@@ -12,7 +12,7 @@ If we take an user, we can describe it like below:
 - password 
 - ...
 
-We call that **the attributes** of an object (refer to the variables). But as we know, objects interact with each other by some action, we call them methods (refer to then functions)
+We call that **the attributes** of an object (refer to variables). But as we know, objects interact with each other by some action, we call them **methods** (refer to functions)
 
 If we take our user back, we can assign some actions:
 
@@ -21,7 +21,7 @@ If we take our user back, we can assign some actions:
 - update the gallery
 - ...
 
-But we know the existence of an object but most of them are very different, we know that two people does not have the same email or password.
+But we know the existence of an object but most of them are very different, we know that two people do not have the same email or password.
 How can we differentiate them? 
 
 We need to create a class.
