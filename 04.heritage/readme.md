@@ -71,5 +71,5 @@ So now let us pay attention to the keyword **public** before each attribute and 
 
 So, in our case, we can change all the public key by a protected key.
 
--[Previous](../03.methods/readme.md)
--[Next](../05.static/readme.md)
+- [Previous](../03.methods/readme.md)
+- [Next](../05.static/readme.md)
