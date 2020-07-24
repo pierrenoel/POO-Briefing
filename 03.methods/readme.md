@@ -49,3 +49,5 @@ $john->setFirstName('Henry');
 var_dump($john->getFirstName()); // Return Henry
 ```
 
+-[Previous](../02.contruct/readme.md)
+-[Next](../04.heritage/readme.md)

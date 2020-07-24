@@ -70,3 +70,6 @@ So now let us pay attention to the keyword **public** before each attribute and 
 - **Private** means that all the attributes or all the methods are available only in the current class (not instantiable)
 
 So, in our case, we can change all the public key by a protected key.
+
+-[Previous](../03.methods/readme.md)
+-[Next](../05.static/readme.md)
