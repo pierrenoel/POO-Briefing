@@ -30,4 +30,4 @@ In those chapters, we are going to see some very important points.
 - [Pierre Giraud](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
 - [Grafikart](https://www.grafikart.fr/tutoriels/presentation-1091)
 
-![image](http://gph.is/2hiUYOj)
+![image](https://media.giphy.com/media/xUNda1SsEtAFU8suM8/giphy.gif)
