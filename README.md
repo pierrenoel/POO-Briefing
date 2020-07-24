@@ -29,3 +29,5 @@ In those chapters, we are going to see some very important points.
 - [PHP.net](https://www.php.net/manual/en/language.oop5.php)
 - [Pierre Giraud](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
 - [Grafikart](https://www.grafikart.fr/tutoriels/presentation-1091)
+
+![image](https://media.giphy.com/media/tGokBeqpHuSgE/giphy.gif)
