@@ -61,6 +61,12 @@ class Magician extends Player
 }
 ```
 
+We remarke that calling the constructor of the parent class we use the keyword ```parent``` fellowed by three double points.
+
+```php
+parent::__construct($pseudo,$strength);
+```
+
 We have decided that when the magician calls the method **atk()** he gains 20 of life, what we can do is to call the method **atk()** from the Player class. 
 
 ```php
@@ -73,6 +79,7 @@ public function atk(Player $player)
 }
 
 ```
+
 
 ## Public, protected, private
 
