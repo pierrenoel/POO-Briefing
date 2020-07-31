@@ -25,6 +25,18 @@ class Player
 
 ```
 
+```php
+$player1 = new Player('Harry',130);
+$player2 = new Player('Voldemort',200);
+
+$player1->atk($player2);
+
+var_dump($player1,$player2);
+
+// object(Player)#1 (3) { ["pseudo"]=> string(5) "Harry" ["life"]=> int(100) ["strength"]=> int(140) } object(Player)#2 (3) { ["pseudo"]=> string(9) "Voldemort" ["life"]=> int(90) ["strength"]=> int(200) }
+
+```
+
 Now, I need to create a magician and add just one attribute **$magic** which refers to the power of the magician. we can copy and paste the Player class but it is not what we are going to do. Magician can be inherited from the player class.
 
 ```php

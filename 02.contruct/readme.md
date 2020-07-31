@@ -12,7 +12,7 @@ $john->password = '1234';
 
 ## Add a constructor 
 
-We can initiate the value of the attributes when the instantiate the object, let us do that.
+We can initiate the value of the attributes when we instantiate the object, let us do that.
 
 ```php
 $john = new User('John','Doe','john@doe.com','1234');
