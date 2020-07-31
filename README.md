@@ -13,8 +13,9 @@ In those chapters, we are going to see some very important points.
 - [Construct](02.contruct/readme.md)
 - [Methods](03.methods/readme.md)
 - [Heritage](04.heritage/readme.md)
-- [Static](05.static/readme.md)
-- [Interface](06.interface/readme.md)
+- [Abstract](05.abstract/readme.md)
+- [Static](06.static/readme.md)
+- [Interface](07.interface/readme.md)
 
 ### More
 - Facade
