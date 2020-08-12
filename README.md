@@ -24,12 +24,12 @@ In those chapters, we are going to see some very important points.
 - Observer
 
 ### Exercices
-
-- Form
+- [Products catalogue](10.exercices/exercice_2.md)
 
 ### Ressources
 - [PHP.net](https://www.php.net/manual/en/language.oop5.php)
 - [Pierre Giraud](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
 - [Grafikart](https://www.grafikart.fr/tutoriels/presentation-1091)
+- [PSR](https://www.php-fig.org/psr/)
 
 ![image](https://media.giphy.com/media/xUNda1SsEtAFU8suM8/giphy.gif)
