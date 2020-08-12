@@ -6,19 +6,19 @@ Imagine we have a facade which have two methods, one to set a message and anothe
 
 ```php
 Interface ShareInterface{
-    public function setMessage($message);
+    public function setMessage(string $message);
     public function share();
 }
 ```
 
- Imagine you want to share the same message to Facebook, twitter and Linkedin. The thing to do is to create many classes inhered from the ShareInterface for the different social networks.
+ Imagine you want to share the same message to Facebook and Linkedin. The thing to do is to create many classes inhered from the ShareInterface for the different social networks.
 
  ```php
 class Facebook implements ShareInterface{
 
     private $message;
 
-    public function setMessage($message){
+    public function setMessage(string $message){
         $this->message = $message;
     }
 
@@ -53,4 +53,79 @@ $facebook->share();
 $linkedin = new Linkedin();
 $linkedin->setMessage('Learning Facade pattern');
 $linkedin->share();
+```
+
+The problem above is that we repeat exactly the same code twice, not very good in our case, we need to refactor this a little bit better. So, we can create a facade.
+
+```php
+class ShareFacade{
+
+    private $facebook;
+    private $linkedin;
+
+    public function __construct($facebook, $linkedin){
+        $this->facebook = $facebook;
+        $this->linkedin = $linkedin;
+    }
+
+}
+```
+
+We see that a facade is a simple class, in this case, we have two attributes (Facebook and Likedin) and a constructor. So simple.
+
+Now, let us take our two methods **setMessage(string $message)** and **share()**
+
+```php
+class ShareFacade{
+
+    private $facebook;
+    private $linkedin;
+
+    public function __construct($facebook, $linkedin){
+        $this->facebook = $facebook;
+        $this->linkedin = $linkedin;
+    }
+
+    public function setMessage(string $message){
+    
+    }
+
+    public function share(){
+
+    }
+
+}
+```
+
+And in those methods, let us call the same function for each social networks.
+
+```php
+class ShareFacade{
+
+    private $facebook;
+    private $linkedin;
+
+    public function __construct($facebook, $linkedin){
+        $this->facebook = $facebook;
+        $this->linkedin = $linkedin;
+    }
+
+    public function setMessage($message){
+        $this->facebook->setMessage($message);
+        $this->linkedin->setMessage($message);
+    }
+
+    public function share(){
+        $this->facebook->share();
+        $this->linkedin->share();
+    }
+}
+
+```
+
+To finish this section, let us inhered the ShareFacade
+
+```php
+$socialMedia = new ShareFacade(new Facebook(), new Linkedin());
+$socialMedia->setMessage('Learning facade pattern')->share();
 ```
