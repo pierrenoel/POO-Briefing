@@ -2,7 +2,7 @@
 
 ## What's POO?
 
-In the procedural programming, the website uses to read instructions after instructions, line by line. Now with POO everything change.
+In the procedural programming, the website used to read instructions after instructions, line by line. Now with POO everything changes.
 In other words, POO means **oriented programming object** So, we are going to use objects and those objects will be working together.
 
 In those chapters, we are going to see some very important points.
