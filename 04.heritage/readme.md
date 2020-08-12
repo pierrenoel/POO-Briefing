@@ -1,6 +1,6 @@
 # Heritage
 
-For this example, let us create a player class and add a method **atk**. When a player attacks another one, he obtains 10 points of strength but the other loses point of life.
+For this example, let us create a player class and add a method **atk**. When a player attacks another one, he obtains 10 points of strength but the other loses 10 points of life.
 
 ```php
 class Player
@@ -61,7 +61,7 @@ class Magician extends Player
 }
 ```
 
-We remarke that calling the constructor of the parent class we use the keyword ```parent``` fellowed by three double points.
+We notice that to call the constructor of the parent class we use the keyword ```parent``` followed by two double points.
 
 ```php
 parent::__construct($pseudo,$strength);
