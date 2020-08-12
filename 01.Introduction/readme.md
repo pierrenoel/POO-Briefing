@@ -1,6 +1,6 @@
 # Objects?
 
-Let us have a look about object. An object in the current life can be a table, a car but even a human or an animal. The good thing is that's exactly the same ting in POO. 
+Let us have a look on objects. An object in the current life can be a table, a car but even a human or an animal. The good thing is that it's exactly the same thing in POO. 
 
 Here is an example:
 
@@ -21,14 +21,14 @@ If we take our user back, we can assign some actions:
 - update the gallery
 - ...
 
-But we know the existence of an object but most of them are very different, we know that two people do not have the same email or password.
+We know the existence of an object but most of them are very different, for example we know that two people do not have the same email or password.
 How can we differentiate them? 
 
 We need to create a class.
 
 ```A class can define types of operations, or methods, that can be performed on a object```
 
-In some other words, a class is the place where you are going to initiate all the attributes and the methods of your object. Let see how to write a class.
+In other words, a class is the place where you are going to initiate all the attributes and the methods of your object. Let's see how to write a class.
 
 ```php
 class User{
@@ -52,7 +52,7 @@ class User{
 
 ```markdown
 - Use the keyword **class** 
-- The name of you class must contain the first letter in uppercase
+- The name of your class must contain the first letter in uppercase
 - Do not pay attention for the moment to the **public** keyword
 ```
 
