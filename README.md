@@ -32,5 +32,7 @@ In those chapters, we are going to see some very important points.
 - [Pierre Giraud](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
 - [Grafikart](https://www.grafikart.fr/tutoriels/presentation-1091)
 - [PSR](https://www.php-fig.org/psr/)
+  
+Wrote by Pierre for BeCode web development training - 2020
 
 ![image](https://media.giphy.com/media/xUNda1SsEtAFU8suM8/giphy.gif)
