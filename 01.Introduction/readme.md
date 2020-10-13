@@ -78,6 +78,13 @@ object(User)#1 (1) {
 
 We can also call a method from our class
 
+## Now it is your turn
+So, you will create during the briefing a project called "the perfect Billing", this "project" is like a common thread. 
+
+For this very first step, write on a paper, what is a billing (attributes) and their functionalities.
+
+
+
 ```php
 echo $john->comment(); //returns The user wrote a comment
 ```
