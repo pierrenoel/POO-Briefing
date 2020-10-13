@@ -18,13 +18,14 @@ In those chapters, we are going to see some very important points.
 - [Interface](07.interface/readme.md)
 
 ### More
+- Autoload
 - [MVC](More/mvc.md)
 - [Facade](More/Facade.md)
 - Singleton
 - Observer
 
-### Exercices
-- [Products catalogue](10.exercices/exercice_2.md)
+### Challenge
+- [Billing](10.exercices/billing.md)
 
 ### Ressources
 - [PHP.net](https://www.php.net/manual/en/language.oop5.php)
