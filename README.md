@@ -22,7 +22,7 @@ In those chapters, we are going to see some very important points.
 - [MVC](More/mvc.md)
 - [Facade](More/Facade.md)
 - Singleton
-- Observer
+- [Observer](More/Observer.md)
 
 ### Challenge
 - [Billing](10.exercices/billing.md)
