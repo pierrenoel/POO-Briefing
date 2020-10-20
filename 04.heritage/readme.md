@@ -72,7 +72,7 @@ class Magician extends Player
         return $this->magic;
     }
 
-    public function setMagi(int $magic) : int
+    public function setMagic(int $magic) : int
     {
         $this->magic = $magic;
     }

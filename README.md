@@ -16,13 +16,15 @@ In those chapters, we are going to see some very important points.
 - [Abstract](05.abstract/readme.md)
 - [Static](06.static/readme.md)
 - [Interface](07.interface/readme.md)
+- [Traits](08.Traits/readme.md)
 
 ### More
-- Autoload
+- [Namespaces](More/Namespaces.md)
+- [Autoload](More/Autoload.md)
 - [MVC](More/mvc.md)
 - [Factory](More/Factory.md)
 - [Facade](More/Facade.md)
-- Singleton
+- [Singleton](More/Singleton.md)
 - [Observer](More/Observer.md)
 
 ### Challenge
