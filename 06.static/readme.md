@@ -5,7 +5,7 @@ A static class is a type of class which is instantiated once. It must contain a 
 ```php
 class Route
 {
-    public static function get()
+    public static function get() : void
     {
         echo 'Show the route';
     }
@@ -30,7 +30,7 @@ class User
 {
     protected static $name = "John";
 
-    public static function getName()
+    public static function getName() : string
     {
         echo "Hello " . SELF::$name;
     }
@@ -40,3 +40,4 @@ $john = new User();
 $john::getName()
 
 ```
+

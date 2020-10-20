@@ -18,7 +18,7 @@ class User{
     public $email;
     public $password;
 
-    public function __construct($firstName,$lastName,$email,$password)
+    public function __construct(string $firstName, string $lastName, string $email, string $password)
     {
         $this->firstName = $firstName; 
         $this->lastName = $lastName; 
@@ -26,12 +26,12 @@ class User{
         $this->password = $password
     }
 
-    public function getFirstName()
+    public function getFirstName() : void
     {
         return $this->firstName;
     }
 
-    public function setFirstName($firstName)
+    public function setFirstName(string $firstName) : string
     {
         $this->firstName = $firstName;
     }
@@ -49,5 +49,5 @@ $john->setFirstName('Henry');
 var_dump($john->getFirstName()); // Return Henry
 ```
 
-- [Previous](../02.contruct/readme.md)
+- [Previous](../02.construct/readme.md)
 - [Next](../04.heritage/readme.md)

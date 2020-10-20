@@ -38,12 +38,12 @@ class User{
     public $email;
     public $password;
 
-    public function writeArticle()
+    public function writeArticle() : void
     {
         return 'The user wrote an article';
     }
 
-    public function comment()
+    public function comment() : void
     {
         return 'The user wrote a comment';
     }
@@ -90,4 +90,4 @@ For this very first step, write on a paper, what is a billing (attributes) and t
 
 
 - [Previous](../README.md)
-- [Next](../02.contruct/readme.md)
+- [Next](../02.construct/readme.md)

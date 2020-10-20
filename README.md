@@ -10,7 +10,7 @@ In those chapters, we are going to see some very important points.
 ### Step by step
 
 - [Introduction](01.Introduction/readme.md)
-- [Construct](02.contruct/readme.md)
+- [Construct](02.construct/readme.md)
 - [Methods](03.methods/readme.md)
 - [Heritage](04.heritage/readme.md)
 - [Abstract](05.abstract/readme.md)
@@ -20,6 +20,7 @@ In those chapters, we are going to see some very important points.
 ### More
 - Autoload
 - [MVC](More/mvc.md)
+- [Factory](More/Factory.md)
 - [Facade](More/Facade.md)
 - Singleton
 - [Observer](More/Observer.md)
