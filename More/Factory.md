@@ -79,10 +79,9 @@ class PlayerFactory
 }
 ```
 
-If we check the code below, we remark we have create a static function called create, and in this function, the body is returning a new object. So, let create our first factory object
+If we check the code below, we remark we created a static function called *create*, and in this function, the body is returning a new object. So, let create our first factory object
 
 ```php
 $player1 = PlayerFactory::create('Harry',50,100);
 $player2 = PlayerFactory::create('Voldemort',50,100);
 ```
-
