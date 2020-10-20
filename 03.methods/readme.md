@@ -26,7 +26,7 @@ class User{
         $this->password = $password
     }
 
-    public function getFirstName() : void
+    public function getFirstName() : string
     {
         return $this->firstName;
     }

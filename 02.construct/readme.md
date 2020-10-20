@@ -33,7 +33,7 @@ public function __construct(string $firstName, string $lastName, string $email, 
 When you call the construct method, we use $this which is a pseudo-variable. It refers to the object we have created below.
 
 ```php
-public function __construct(string $firstName,string $lastName, string $email, string $password){
+public function __construct(string $firstName, string $lastName, string $email, string $password){
     $this->firstName = $firstName; // $this->firstName is the attribute we have declared in our class 
     $this->lastName = $lastName; // $lastName is the parameter of our construct method
     $this->email = $email;

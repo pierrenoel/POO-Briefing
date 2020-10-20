@@ -38,12 +38,12 @@ class User{
     public $email;
     public $password;
 
-    public function writeArticle() : void
+    public function writeArticle() : string
     {
         return 'The user wrote an article';
     }
 
-    public function comment() : void
+    public function comment() : string
     {
         return 'The user wrote a comment';
     }

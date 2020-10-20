@@ -5,14 +5,25 @@ For this example, let us create a player class and add a method **atk**. When a 
 ```php
 class Player
 {
-    public $pseudo;
-    public $life = 100;
-    public $strength;
+    protected $pseudo;
+    protected $life = 100;
+    protected $strength;
 
     public function __construct(string $pseudo, int $strength)
     {
         $this->pseudo = $pseudo;
         $this->strength = $strength;
+    }
+
+    public function getPseudo() : string
+    {
+        return $this->pseudo;
+    }
+    // ...
+
+    public function setPseudo(string $pseudo) : string
+    {
+        $this->pseudo = $pseudo;
     }
 
     public function atk(Player $player) : void
@@ -48,12 +59,22 @@ That means that Magician now have all the attributes and the methods from the Pl
 ```php
 class Magician extends Player
 {
-    public $magic;
+    protected $magic;
 
     public function __construct(string $pseudo, int $strength, int $magic)
     {
         $this->magic = $magic;
         parent::__construct( string $pseudo,int $strength);
+    }
+
+    public function getMagic() : int
+    {
+        return $this->magic;
+    }
+
+    public function setMagi(int $magic) : int
+    {
+        $this->magic = $magic;
     }
 
     //...
