@@ -1,27 +1,46 @@
 <?php
 
-class ClassRoute 
+interface CarInterface
 {
-    protected $url;
-    protected $action;
+    public function open() : void;
+    public function start() : void;
+    public function run() : void;
+}
 
-    public function __construct( string $url, string $action)
+class Car implements CarInterface
+{
+    public function open() : void
     {
-        $this->url = $url;
-        $this->action = $action;
+        echo 'The car is opened';
     }
-}   
 
-
-
-class Route 
-{
-    public static function get(string $url, string $action) : ClassRoute
+    public function start() : void 
     {
-        return new ClassRoute($url, $action);
+        echo 'The card is started';
+    }
+
+    public function run() : void 
+    {
+        echo 'The car is running';
     }
 }
 
-Route::get('/home','get');
-Route::get('/about','get');
+class FacadeCar
+{
+    protected $car;
 
+    public function __construct(Car $car){
+        $this->car = $car;
+    }
+
+    public function turnOn()
+    {
+        $this->car->open();
+        $this->car->start();
+        $this->car->run();
+    }
+}
+
+
+$car = new FacadeCar(new Car());
+$car->turnOn();
