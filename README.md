@@ -30,10 +30,6 @@ In those chapters, we are going to see some very important points.
 - [Singleton](More/Singleton.md)
 - [Observer](More/Observer.md)
 
-### Challenge
-- [Billing](10.exercices/billing.md)
->>>>>>> parent of f4946ea... update
-
 ### Ressources
 - [PHP.net](https://www.php.net/manual/en/language.oop5.php)
 - [Pierre Giraud](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
