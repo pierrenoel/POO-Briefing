@@ -1,4 +1,0 @@
-# Namespaces
-
-## The problem
-
