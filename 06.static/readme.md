@@ -41,5 +41,3 @@ $john::getName()
 
 ```
 
-- [Previous](../05.abstract/readme.md)
-- [Next](../07.interface/readme.md)

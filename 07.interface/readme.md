@@ -46,6 +46,3 @@ class MyClass implements MyInterface1, MyInterface2, MyInterface3
 }
 
 ```
-
-- [Previous](../06.static/readme.md)
-- [Next](../08.Traits/readme.md)
