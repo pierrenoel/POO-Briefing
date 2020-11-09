@@ -18,11 +18,9 @@ In those chapters, we are going to see some very important points.
 - [Interface](07.interface/readme.md)
 - [Traits](08.Traits/readme.md)
 
-<<<<<<< HEAD
 ### Exercices
 - [First](10.exercices/first.md)
 
-=======
 ### More
 - [Namespaces](More/Namespaces.md)
 - [Autoload](More/Autoload.md)
