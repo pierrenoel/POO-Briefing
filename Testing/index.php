@@ -1,46 +1,60 @@
 <?php
 
-interface CarInterface
-{
-    public function open() : void;
-    public function start() : void;
-    public function run() : void;
-}
+//  Practice (1)
 
-class Car implements CarInterface
+class User
 {
-    public function open() : void
+    public $firstName;
+    public $lastName;
+    public $email;
+    public $password;
+
+    public function createUser() : string
     {
-        echo 'The car is opened';
+        return "The user is created";
     }
 
-    public function start() : void 
+    public function connection() : void
     {
-        echo 'The card is started';
-    }
-
-    public function run() : void 
-    {
-        echo 'The car is running';
+        echo "The user is connected";
     }
 }
 
-class FacadeCar
-{
-    protected $car;
+$user = new User;
+$user->firstName = 'Pierre';
+$user->lastName = 'Noël';
+$user->email = 'pierre@gmail.com';
+$user->password = 'ruzo783e';
 
-    public function __construct(Car $car){
-        $this->car = $car;
+$user->createUser();
+$user->connection();
+
+
+
+//  Practice (2)
+
+class User
+{
+    public $firstName;
+    public $lastName;
+    public $email;
+    public $password;
+
+    public function __construct($firstName,$lastName,$email,$password)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->email = $email;
+        $this->password = $password;
     }
 
-    public function turnOn()
+    public function createUser() : string
     {
-        $this->car->open();
-        $this->car->start();
-        $this->car->run();
+        return "The user is created";
+    }
+
+    public function connection() : void
+    {
+        echo "The user is connected";
     }
 }
-
-
-$car = new FacadeCar(new Car());
-$car->turnOn();

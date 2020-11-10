@@ -82,12 +82,15 @@ We can also call a method from our class
 echo $john->comment(); //returns The user wrote a comment
 ```
 
-## Now it is your turn
-So, you will create during the briefing a project called "the perfect Billing", this "project" is like a common thread. 
+## Practice (1)
+Create a class User which contains a firstName, lastName, email, password, and a role. Write two methods:
+- Method CreateUser (return "The user is created")
+- Method Connection (echo "The user is connected")
+----
+- Then create a new object and return the result of the two methods in your favorite browser.
 
-For this very first step, write on a paper, what is a billing (attributes) and their functionalities (methods).
-
-
+**Pay attention of what return the methods : string or void!**
 
 - [Previous](../README.md)
 - [Next](../02.construct/readme.md)
+

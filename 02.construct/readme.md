@@ -41,5 +41,9 @@ public function __construct(string $firstName, string $lastName, string $email, 
 }
 ```
 
+## Practice (2)
+- Add a constructor to the User class previously created.
+
+
 - [Previous](../01.Introduction/readme.md)
 - [Next](../03.methods/readme.md)
