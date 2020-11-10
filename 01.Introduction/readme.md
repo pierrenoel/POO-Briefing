@@ -86,8 +86,8 @@ echo $john->comment(); //returns The user wrote a comment
 Create a class User which contains a firstName, lastName, email, password, and a role. Write two methods:
 - Method CreateUser (return "The user is created")
 - Method Connection (echo "The user is connected")
-----
-- Then create a new object and return the result of the two methods in your favorite browser.
+
+Then create a new object and return the result of the two methods in your favorite browser.
 
 **Pay attention of what return the methods : string or void!**
 
