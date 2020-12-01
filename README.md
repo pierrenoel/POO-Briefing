@@ -18,81 +18,18 @@ In those chapters, we are going to see some very important points.
 - [Interface](07.interface/readme.md)
 - [Traits](08.Traits/readme.md)
 
-### Exercices
-- [First](10.exercices/first.md)
+### Exercice 1
+- POO [Step 1](Exercices/POO-Helpers-Class-etape-1.md)
+
 
 ### Ressources
-- [PHP.net](https://www.php.net/manual/en/language.oop5.php)
+- [Manual PHP](https://www.php.net/manual/en/language.oop5.php)
+- [POO W3C](https://www.w3schools.com/php/php_oop_classes_objects.asp)
+- [Autoloading](https://www.grafikart.fr/tutoriels/autoload-561)
 - [Pierre Giraud](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
-- [Grafikart](https://www.grafikart.fr/tutoriels/presentation-1091)
 - [PSR](https://www.php-fig.org/psr/)
   
 Wrote by Pierre for BeCode web development training - 2020
 
 ![image](https://media.giphy.com/media/xUNda1SsEtAFU8suM8/giphy.gif)
 
-
-```php
-interface MessageInterface
-{
-    public function facebook() : void;
-    public function twitter() : void;
-    public function linkedin() : void;
-}
-
-class Message implements MessageInterface
-{
-    protected $message;
-
-    public function __construct($message)
-    {
-        $this->message = $message;
-    }
-
-    public function getMessage() : void
-    {
-        echo $this->message;
-    }
-
-    public function setMessage() : string
-    {
-        $this->message = $this->message;
-    }
-
-    public function facebook() : void
-    {
-        echo $this->message . ' a été publiée sur Facebook';
-    }
-
-    public function twitter() : void
-    {
-        echo $this->message . ' a été publiée sur Twitter';
-    }
-
-    public function linkedin() : void
-    {
-        echo $this->message . ' a été publiée sur Linkedin';
-    }
-
-}
-
-class MessageFacade 
-{
-    protected $message;
-
-    public function __construct(Message $message)
-    {
-        $this->message = $message;
-    }
-
-    public function publish()
-    {
-        $this->message->facebook();
-        $this->message->twitter();
-        $this->message->linkedin();
-    }
-}
-
-$message = new MessageFacade(new Message('Hello, I am happy to publish this first message'));
-$message->publish();
-```

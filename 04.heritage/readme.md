@@ -101,7 +101,6 @@ public function atk(Player $player)
 
 ```
 
-
 ## Public, protected, private
 
 So now let us pay attention to the keyword **public** before each attribute and each function: 

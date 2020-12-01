@@ -48,9 +48,5 @@ Now we can access to the attribute with two methods **getFirstName** and **setFi
 $john->setFirstName('Henry');
 var_dump($john->getFirstName()); // Return Henry
 ```
-
-## Practice (3)
-Create a getter and a setter for every attributes
-
 - [Previous](../02.construct/readme.md)
 - [Next](../04.heritage/readme.md)
