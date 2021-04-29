@@ -2,41 +2,13 @@
 
 This part is a little more complex to understand and the fellowing examples could be hurt you a little bit ;). So, do not read this section many times.
 
+## Trait vs Polymorphism 
+
+In traits, we declare a method which be used with the same body in every class where it called. The polymorphism is something different in sense of we don't know the behavior or what the method has supposed to get in parameter.
+
+So, in order to demonstrate this, we can create the basic class User.
+
 ```php
-<?php
-
-interface Role 
-{
-    public function permissions();
-}
-
-class Admin implements Role
-{
-    public function permissions()
-    {
-        $this->write();
-        $this->update();
-    }
-
-    public function write()
-    {
-       echo 'Admin can write a new post';
-    }
-
-    public function update()
-    {
-        echo 'Admin can edit a post';
-    }
-}
-
-class Member implements Role
-{
-    public function permissions()
-    {
-        return 'Member can only read a post';
-    }
-}
-
 class User 
 {
     protected $pseudo;
@@ -84,13 +56,80 @@ class User
     {
         $this->password = crypt($password);
     }
-    
-    public function role(Role $role)
+}
+```
+
+Nothing new here. Now I want to create roles for the user. However each role has different permissions, an admin can create or edit a post or a member can only read a post. So, let us implement the method role in our **User** class.
+
+```php
+   public function role()
+    {
+        return 'Now user has a role';
+    }
+```
+
+Let us create the two role mentioned above.
+
+```php
+class Admin 
+{
+    public function permissions()
+    {
+        Return 'Admin can write and edit posts';
+    }
+
+}
+
+class Member 
+{
+    public function permissions()
+    {
+        return 'Member can only read a post';
+    }
+}
+```
+
+## Let us create an interface for the roles class
+
+```php
+interface Role 
+{
+    public function permissions();
+}
+
+```
+
+// Describe here
+
+```php
+class Admin implements Role
+{
+    public function permissions()
+    {
+        Return 'Admin can write and edit posts';
+    }
+
+}
+
+class Member implements Role
+{
+    public function permissions()
+    {
+        return 'Member can only read a post';
+    }
+}
+```
+
+// Describe here
+
+```php
+  public function role(Role $role)
     {
         return $role->permissions();
     }
-}
+```
 
+```php
 $admin = new Admin();
 
 $user = new User('John');
