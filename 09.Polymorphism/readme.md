@@ -59,7 +59,7 @@ class User
 }
 ```
 
-Nothing new here. Now I want to create roles for the user. However each role has different permissions, an admin can create or edit a post or a member can only read a post. So, let us implement the method role in our **User** class.
+Nothing new here. Now I want to create roles for the user. However each role has different permissions, an admin can create or edit a post and a member can only read a post. So, let us implement the method role in our **User** class.
 
 ```php
    public function role()
