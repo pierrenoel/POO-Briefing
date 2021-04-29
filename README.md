@@ -17,6 +17,7 @@ In those chapters, we are going to see some very important points.
 - [Static](06.static/readme.md)
 - [Interface](07.interface/readme.md)
 - [Traits](08.Traits/readme.md)
+- [Polymorphism]
 
 ### Exercice 1
 - POO [Step 1](Exercices/POO-Helpers-Class-etape-1.md)

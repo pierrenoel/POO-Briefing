@@ -61,10 +61,10 @@ class Magician extends Player
 {
     protected $magic;
 
-    public function __construct(string $pseudo, int $strength, int $magic)
+    public function __construct($pseudo, $strength, $magic)
     {
         $this->magic = $magic;
-        parent::__construct( string $pseudo,int $strength);
+        parent::__construct($pseudo, $strength);
     }
 
     public function getMagic() : int
@@ -85,7 +85,7 @@ class Magician extends Player
 We remarke that calling the constructor of the parent class we use the keyword ```parent``` fellowed by three double points.
 
 ```php
-parent::__construct(string $pseudo, int $strength);
+parent::__construct($pseudo, $strength);
 ```
 
 We have decided that when the magician calls the method **atk()** he gains 20 of life, what we can do is to call the method **atk()** from the Player class. 
