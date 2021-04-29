@@ -1,10 +1,10 @@
 # Polymorphism
 
-This part is a little more complex to understand and the fellowing examples could be hurt you a little bit ;). So, do not read this section many times.
+This part is a little more complex to understand and the fellowing example could be difficult a little bit ;). So, read this section many times if necessarily.
 
 ## Trait vs Polymorphism 
 
-In traits, we declare a method which be used with the same body in every class where it called. The polymorphism is something different in sense of we don't know the behavior or what the method has supposed to get in parameter.
+In traits, we declare a method which be used with the same body in every class where it called. The polymorphism is something different in sense of we do not know the behavior or we do not know the body of the class which is called as an object in the method.
 
 So, in order to demonstrate this, we can create the basic class User.
 
@@ -59,7 +59,7 @@ class User
 }
 ```
 
-Nothing new here. Now I want to create roles for the user. However each role has different permissions, an admin can create or edit a post and a member can only read a post. So, let us implement the method role in our **User** class.
+Nothing new here. Now let us create roles. However each role has different permissions, an admin can create or edit a post and a member can only read a post. So, let us implement the method role in our **User** class.
 
 ```php
    public function role()
@@ -68,7 +68,7 @@ Nothing new here. Now I want to create roles for the user. However each role has
     }
 ```
 
-Let us create the two role mentioned above.
+## The two roles
 
 ```php
 class Admin 
@@ -89,7 +89,7 @@ class Member
 }
 ```
 
-## Let us create an interface for the roles class
+## An interface for the roles class
 
 ```php
 interface Role 
@@ -99,7 +99,7 @@ interface Role
 
 ```
 
-// Describe here
+## Admin & Member implement the Role interface
 
 ```php
 class Admin implements Role
@@ -120,7 +120,9 @@ class Member implements Role
 }
 ```
 
-// Describe here
+## Object as a parameter
+
+We pass the instance of the class as parameter in our method **Role()**, in order to have access to the content in the right class.
 
 ```php
   public function role(Role $role)
@@ -131,7 +133,11 @@ class Member implements Role
 
 ```php
 $admin = new Admin();
+$member = new Member();
 
-$user = new User('John');
-echo $role = $user->role($admin);
+$userMargaux = new User('Margaux');
+echo $userMargaux->role($admin);
+
+$userMartin = new User('Martin');
+echo $userMartin->role($member);
 ```

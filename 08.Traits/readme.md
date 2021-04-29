@@ -75,7 +75,9 @@ trait Salutation
 ```
 Okay, now I have my trait but how can I call the function ```sayHello()``` in my classes **User** and **Animal**? 
 
-Use the keyword **use** before the attributes
+## USE
+
+Use the keyword **use** before the attributes of your class.
 
 ```php
 class User
@@ -88,6 +90,7 @@ class User
 ```
 
 ## The result
+
 ```php
 
 $animal = new Animal('Buddy','Dog');
