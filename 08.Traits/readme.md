@@ -1,34 +1,101 @@
 # Traits
 
-Let us start with an the ```Invoice``` class in which you have for the moment two attributes.
+## The problem
+PHP is a single inheritance language, that means a child class can inherit only from one single parent. This cause problem in our future project if we want to write reusable code. But we have a nice solution over here, it only calls ```traits```.
+
+So, it is better to give an example for better understanding.
 
 ```php
-class Invoice
+class Animal 
 {
-    protected $ref;
-    protected $price;
+    protected $name;
+    protected $type;
 
-    public function __construct(
-        string $ref,
-        int $price,
-    ){
-        $this->ref = $ref;
-        $this->price = $price;
+    public function __construct(string $name, string $type)
+    {
+        $this->name = $name;
+        $this->type = $type;
     }
+
+      // Getters and Setters 
+
+    public function sayHello()
+    {
+        return 'Hello there!';
+    }
+}
+
+class User
+{
+    protected $pseudo;
+    protected $email;
+    protected $password;
+
+    public function __construct(string $pseudo, string $email, string $password)
+    {
+        $this->pseudo = $pseudo;
+        $this->email = $email;
+        $this->password = $password;
+    }
+
+    // Getters and Setters 
+
+    public function sayHello()
+    {
+        return 'Hello there!';
+    }
+}
+
+
+$dog = new Animal('Budy','Dog');
+echo $dog->sayHello();
+
+$user = new User('Admin','admin@admin.be','azerty');
+echo $user->sayHello();
+```
+
+Do you find the problem? Well. DRY (Do not repeat). The method ```SayHello()``` is wrote twice in two different classes, but has the same body.
+
+So, the reason we use traits are :
+- Responding to a problem of multiple inherance 
+- DRY
+- If we want to maintain our code properly, and change the body, we have to update only once. 
+
+***Note that it is important not to confuse the traits with the polymorphism***
+
+## Traits
+```php
+trait Salutation
+{
+    public function sayHello()
+    {
+        return 'Hello there!';
+    }
+}
+```
+Okay, now I have my trait but how can I call the function ```sayHello()``` in my classes **User** and **Animal**? 
+
+Use the keyword **use** before the attributes
+
+```php
+class User
+{
+    use Salutation;
 
     // ...
 }
-```
-Now, when I instantiate this class, I want to know the price including the tva. So, let us create a method ```priceWithTvaIncluded``` which pass the parameter tva.
 
+```
+
+## The result
 ```php
-public function priceWithTvaIncluded($tva)
-{
-    $tvaExtracted = ($this->price * $tva) / 100;
-    return $this->price + $tvaExtracted;
-}
+
+$animal = new Animal('Buddy','Dog');
+echo $animal->sayHello();
+
+$user = new User('John','john@email.be','azerty');
+echo $user->sayHello();
+
 ```
-
-
 
 - [Previous](../07.interface/readme.md)
