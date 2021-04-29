@@ -19,10 +19,6 @@ In those chapters, we are going to see some very important points.
 - [Traits](08.Traits/readme.md)
 - [Polymorphism]
 
-### Exercice 1
-- POO [Step 1](Exercices/POO-Helpers-Class-etape-1.md)
-
-
 ### Ressources
 - [Manual PHP](https://www.php.net/manual/en/language.oop5.php)
 - [POO W3C](https://www.w3schools.com/php/php_oop_classes_objects.asp)
