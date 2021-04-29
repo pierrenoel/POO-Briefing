@@ -1,7 +1,7 @@
 # Traits
 
 ## The problem
-PHP is a single inheritance language, that means a child class can inherit only from one single parent. This cause problem in our future project if we want to write reusable code. But we have a nice solution over here, it only calls ```traits```.
+PHP is a single inheritance language, that means a child class can inherit only from one single parent. This cause problem in our future project if we want to write reusable code. So, we have a nice solution out there called```traits```.
 
 So, it is better to give an example for better understanding.
 
@@ -59,9 +59,9 @@ Do you find the problem? Well. DRY (Do not repeat). The method ```SayHello()``` 
 So, the reason we use traits are :
 - Responding to a problem of multiple inherance 
 - DRY
-- If we want to maintain our code properly, and change the body, we have to update only once. 
+- If we want to maintain our code properly, and change the body, we have to update the method only once. 
 
-***Note that it is important not to confuse the traits with the polymorphism***
+***Note that it is important not to confuse the traits with the polymorphism.***
 
 ## Traits
 ```php
@@ -97,5 +97,7 @@ $user = new User('John','john@email.be','azerty');
 echo $user->sayHello();
 
 ```
+
+And it works!
 
 - [Previous](../07.interface/readme.md)
