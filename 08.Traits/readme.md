@@ -101,3 +101,4 @@ echo $user->sayHello();
 And it works!
 
 - [Previous](../07.interface/readme.md)
+- [Next](../09.Polymorphism/readme.md)
