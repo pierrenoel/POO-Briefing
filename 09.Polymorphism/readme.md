@@ -4,7 +4,7 @@ This part is a little more complex to understand and the fellowing example could
 
 ## Trait vs Polymorphism 
 
-In traits, we declare a method which be used with the same body in every class where it called. The polymorphism is something different in sense of we do not know the behavior or we do not know the body of the class which is called as an object in the method.
+With traits, we declare a method which be used with the same body in every class where it called. The polymorphism is something different in sense of we do not know the behavior or we do not know the body of the class which is called as an object in the method.
 
 So, in order to demonstrate this, we can create the basic class User.
 

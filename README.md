@@ -1,9 +1,9 @@
 # POO Introduction
 
-## What's POO?
+## What's OOP?
 
-In the procedural programming, the website uses to read instructions after instructions, line by line. Now with POO everything change.
-In other words, POO means **oriented programming object** So, we are going to use objects and those objects will be working together.
+In the procedural programming, the website uses to read instructions after instructions, line by line. Now with OOP everything change.
+In other words, OOP means **oriented programming object** So, we are going to use objects and those objects will be working together.
 
 In those chapters, we are going to see some very important points.
 
@@ -27,9 +27,12 @@ In those chapters, we are going to see some very important points.
 - [POO W3C](https://www.w3schools.com/php/php_oop_classes_objects.asp)
 - [Autoloading](https://www.grafikart.fr/tutoriels/autoload-561)
 - [Pierre Giraud](https://www.pierre-giraud.com/php-mysql-apprendre-coder-cours/introduction-programmation-orientee-objet/)
+
 - [PSR](https://www.php-fig.org/psr/)
+- [The Four Basics of OOP](https://www.indeed.com/career-advice/career-development/what-is-object-oriented-programming#:~:text=Object%2Doriented%20programming%20has%20four,%2C%20abstraction%2C%20inheritance%20and%20polymorphism.)
+- [SOLID](https://guillaume-richard.fr/principe-solid-simplifies-avec-des-exemples-en-php/)
   
-Wrote by Pierre for BeCode web development training - 2020
+Wrote by Pierre for BeCode web development training - 2021
 
 ![image](https://media.giphy.com/media/xUNda1SsEtAFU8suM8/giphy.gif)
 

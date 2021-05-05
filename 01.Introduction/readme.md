@@ -1,6 +1,6 @@
 # Objects?
 
-Let us have a look on objects. An object in the current life can be a table, a car but even a human or an animal. The good thing is that it's exactly the same thing in POO. 
+Let us have a look on objects. An object in the current life can be a table, a car but even a human or an animal. The good thing is that it's exactly the same thing in OOP. 
 
 Here is an example:
 
