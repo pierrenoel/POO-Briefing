@@ -17,10 +17,6 @@ In those chapters, we are going to see some very important points.
 - [Static](06.static/readme.md)
 - [Interface](07.interface/readme.md)
 - [Traits](08.Traits/readme.md)
-- [Polymorphism](09.Polymorphism/readme.md)
-
-### Your turn
-- [The Gallery](YourTurn/TheGallery.md)
 
 ### Ressources
 - [Manual PHP](https://www.php.net/manual/en/language.oop5.php)
