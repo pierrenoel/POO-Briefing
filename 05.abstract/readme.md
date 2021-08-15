@@ -68,7 +68,7 @@ abstract class User
 
 class Admin extends User
 {
-    public function show()
+    public function show() 
     {
         echo 'Hello Admin';
     }

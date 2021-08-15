@@ -13,17 +13,17 @@ But it is not the correct way because we don't want to let the user update the a
 ```php
 class User{
     
-    public $firstName;
-    public $lastName;
-    public $email;
-    public $password;
+    public string $firstName;
+    public string $lastName;
+    public string $email;
+    public string $password;
 
     public function __construct(string $firstName, string $lastName, string $email, string $password)
     {
         $this->firstName = $firstName; 
         $this->lastName = $lastName; 
         $this->email = $email;
-        $this->password = $password
+        $this->password = $password;
     }
 
     public function getFirstName() : string
@@ -31,7 +31,7 @@ class User{
         return $this->firstName;
     }
 
-    public function setFirstName(string $firstName) : string
+    public function setFirstName(string $firstName) : void
     {
         $this->firstName = $firstName;
     }

@@ -5,9 +5,9 @@ For this example, let us create a player class and add a method **atk**. When a 
 ```php
 class Player
 {
-    protected $pseudo;
-    protected $life = 100;
-    protected $strength;
+    protected string $pseudo;
+    protected int $life = 100;
+    protected int $strength;
 
     public function __construct(string $pseudo, int $strength)
     {
@@ -21,7 +21,7 @@ class Player
     }
     // ...
 
-    public function setPseudo(string $pseudo) : string
+    public function setPseudo(string $pseudo) : void
     {
         $this->pseudo = $pseudo;
     }
@@ -59,9 +59,9 @@ That means that Magician now have all the attributes and the methods from the Pl
 ```php
 class Magician extends Player
 {
-    protected $magic;
+    protected int $magic;
 
-    public function __construct($pseudo, $strength, $magic)
+    public function __construct(string $pseudo, string $strength, int $magic)
     {
         $this->magic = $magic;
         parent::__construct($pseudo, $strength);
@@ -72,7 +72,7 @@ class Magician extends Player
         return $this->magic;
     }
 
-    public function setMagic(int $magic) : int
+    public function setMagic(int $magic) : void
     {
         $this->magic = $magic;
     }

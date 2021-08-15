@@ -33,10 +33,10 @@ In other words, a class is the place where you are going to initiate all the att
 ```php
 class User{
     
-    public $firstName;
-    public $lastName;
-    public $email;
-    public $password;
+    public string $firstName;
+    public string $lastName;
+    public string $email;
+    public string $password;
 
     public function writeArticle() : string
     {

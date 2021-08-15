@@ -1,6 +1,6 @@
 # Interface
 
-## Quit definition
+## Short definition
 
 A interface gives us the possibility to create a lots of methods in a class without declaring the body of them. To declare an interface, you have to write the interface keyword
 before the name of the class. Then, you have to write all the definition of the methods you want, but they have to be declared in public.
