@@ -30,7 +30,7 @@ public function __construct(string $firstName, string $lastName, string $email, 
 
 ## $this 
 
-When you call the construct method, we use $this which is a pseudo-variable. It refers to the object we have created below.
+When you call the construct method, we use $this which is a pseudo-variable. It refers to the object itself.
 
 ```php
 public function __construct(string $firstName, string $lastName, string $email, string $password){

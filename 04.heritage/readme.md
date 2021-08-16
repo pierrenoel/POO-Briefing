@@ -26,10 +26,12 @@ class Player
         $this->pseudo = $pseudo;
     }
 
-    public function atk(Player $player) : void
+    public function atk(Player $player) : string
     {
         $this->strength += 10;
         $player->life -= 10; 
+
+        return $this->$pseudo . 'attacks' . $player->pseudo;
     }
     
 }
